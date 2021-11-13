@@ -20,19 +20,32 @@ const Registro = () =>{
         }
     ]
 
+
+    // en esta parte se crea una constante handledelete para hacer 
+    // la funcion de eliminar se le añade tambien una sweetalert personalizada 
+
     const handleDelete = (registro)=>
-        console.log(handleDelete, registro._id)
         swal({
-            title:"estas Seguro(a)?",
-            text:"si borras, no se podra recuperar...",
+            title:"Estas Seguro(a)?",
+            text:"Si Borras, No lo Podras Recuperar...",
             icon:"warning",
             buttons: true,
             dangerMode: true
         }).then((willDelete)=>{
             if(willDelete){
                 console.log(handleDelete,)
+                swal("El Registro" + registro._id + " Fue Borrada", {
+                    icon: "success",
+                })
             }
         });
+
+
+
+
+    // Aqui estamos retornado el contenido de las llaves de la parte superior 
+    // y la funcion .map lo que hace es recorrer y no entrega los valores que solicitamos
+    // los cuales son importados al archivo Datos por meedio de los props
 
     return (
         <div>

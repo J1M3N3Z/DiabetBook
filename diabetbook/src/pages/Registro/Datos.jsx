@@ -5,6 +5,10 @@ const Datos = (props) => {
     //console.log(registro)
 
     return (
+
+        // aqui  creamos unas tablas en las cuales se ubica la 
+        //informacion que traemos del archivo registro por medio d elos props
+
         <React.Fragment>
             <div className="col">
                 <div className="card mb-4 rounded-3 shadow-sm">
