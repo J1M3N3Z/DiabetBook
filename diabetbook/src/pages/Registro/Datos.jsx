@@ -38,10 +38,10 @@ const Datos = (props) => {
                            <li>{registro.fecha}</li>
                         </ul>
 
-                        <button type="button" 
-                        className="w-100 btn btn-lg btn-outline-primary" 
-                        onClick={()=>{handleDelete(registro)}}>
-                             Delete 
+                        <button type="button"
+                            className="w-100 btn btn-lg btn-outline-dark" 
+                            onClick={()=>{handleDelete(registro)}}>
+                                Delete 
                         </button>
                     </div>
                 </div>

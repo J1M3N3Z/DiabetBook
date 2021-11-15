@@ -10,21 +10,13 @@ const Registro = () =>{
         detalles:"Soy Detalles", 
         resultado:"Soy Resultado", 
         fecha:fecha,
-        },
-        {
-        _id:2,
-        nombre:"paciente2", 
-        detalles:"Soy Detalles2", 
-        resultado:"Soy Resultado2", 
-        fecha:fecha,
         }
     ]
-
 
     // en esta parte se crea una constante handledelete para hacer 
     // la funcion de eliminar se le añade tambien una sweetalert personalizada 
 
-    const handleDelete = (registro)=>
+    const handleDelete = (registro)=> 
         swal({
             title:"Estas Seguro(a)?",
             text:"Si Borras, No lo Podras Recuperar...",
@@ -42,7 +34,6 @@ const Registro = () =>{
 
 
 
-
     // Aqui estamos retornado el contenido de las llaves de la parte superior 
     // y la funcion .map lo que hace es recorrer y no entrega los valores que solicitamos
     // los cuales son importados al archivo Datos por meedio de los props
@@ -51,7 +42,7 @@ const Registro = () =>{
         <div>
             <ul>
             <div className="p-3 pb-md-4 mx-auto text-center">
-                <h1 className="display-4 fw-normal">Hello Daniel</h1>
+                <h1 className="display-4 fw-normal">Registro</h1>
                 <div className="row row-cols-1 row-cols-md-3 mb-3 text-center"></div>
                     {registros.map((registro) => (
                         <Datos 

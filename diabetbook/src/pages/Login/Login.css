@@ -1,0 +1,36 @@
+    .Login {
+        width: 20rem;
+    }
+
+    .login-image{
+        
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+
+    .container-Login {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+        padding: 3px 15px 3px 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px 0 rgba(10, 10, 10, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: rgb(44, 43, 43);
+    }
+    
+    .card-title-login {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 20px;
+        font-family: '';
+    }
+    
+    .card-text-login {
+        text-align: center;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+

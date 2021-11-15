@@ -1,9 +1,10 @@
 const Añadir = () =>{
     return (
-        <div>
-            <h1>Hola Añadir</h1>
-        </div>
-    );
-}
+        <h1>
+            hola
+        </h1>
+    )
+ }
+ console.log()
 
-export default Añadir 
+ export default Añadir;
