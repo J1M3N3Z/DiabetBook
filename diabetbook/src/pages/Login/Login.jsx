@@ -2,12 +2,15 @@ import React from "react";
 import {Form} from "react-bootstrap"
 import { Button } from 'react-bootstrap';
 import "../Login/Login.css"
+import Navbar from "../../components/navbar"
+import Footer from "../../components/Footer"
 
 const Login = () => {
   return (
     <React.Fragment>
-        <div className="Login p-3 mt-5 pb-md-4 mx-auto">
-            <div className="login-image">
+        <Navbar/>
+        <div className="login-image">
+            <div className="Login p-3 mt-5 pb-md-4 mx-auto">
                 <div className="cardLogin">
                     <div className="card-body mt-2">
                         <div className="container-Login">
@@ -38,6 +41,7 @@ const Login = () => {
                 </div>
             </div>
         </div>
+    <Footer/>
 </React.Fragment>
   );
 };

@@ -38,7 +38,7 @@ const Footer = () => {
                 </li>
             </ul>
             <p className="text-muted text-center">
-                {new Date().getFullYear()}
+                {new Date().getFullYear()}  copyright
             </p>
         </div>
     </div> 

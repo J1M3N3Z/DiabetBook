@@ -1,15 +1,19 @@
 import Datos from "./Datos"
 import swal from "sweetalert"
+import Navbar from "../../components/navbar"
+import Footer from "../../components/Footer"
+import "./Registro.css"
+
 
 const Registro = () =>{
     const fecha = new Date().toLocaleString();
     const registros = [
         {
         _id:1,
-        nombre:"paciente1", 
-        detalles:"Soy Detalles", 
+        name:"paciente1", 
+        details:"Soy Detalles", 
         resultado:"Soy Resultado", 
-        fecha:fecha,
+        date:fecha,
         }
     ]
 
@@ -40,18 +44,22 @@ const Registro = () =>{
 
     return (
         <div>
-            <ul>
-            <div className="p-3 pb-md-4 mx-auto text-center">
-                <h1 className="display-4 fw-normal">Registro</h1>
-                <div className="row row-cols-1 row-cols-md-3 mb-3 text-center"></div>
-                    {registros.map((registro) => (
-                        <Datos 
-                        key={registro._id} 
-                        registro={registro} 
-                        handleDelete={handleDelete}/>      
-                    ))}
-                </div>
-            </ul>
+            <Navbar/>
+            <div className="registro-image">
+                <ul>
+                <div className="p-3 pb-md-4 mx-auto text-center">
+                    <h1 className="display-4 fw-normal">Registro</h1>
+                    <div className="row row-cols-1 row-cols-md-3 mb-3 text-center"></div>
+                        {registros.map((registro) => (
+                            <Datos 
+                            key={registro._id} 
+                            registro={registro} 
+                            handleDelete={handleDelete}/>      
+                        ))}
+                    </div>
+                </ul>
+            </div>
+            <Footer/>
         </div>
     )
 }

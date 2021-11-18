@@ -1,16 +1,16 @@
 import Navbar from "../../components/navbar"
 import Footer from "../../components/Footer"
 
-const Inicio = () => {
+const Agregar = () => {
     return(
     <div>
         <Navbar/>
             <h1>
-                Hello Inicio
+                Hello Agregar
             </h1>
         <Footer/>
     </div>
     )
 }
 
-export default Inicio
+export default Agregar

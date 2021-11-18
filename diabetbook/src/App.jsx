@@ -1,26 +1,28 @@
 import './App.css';
+import React from "react"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Inicio from "./pages/Inicio/Inicio";
 import Registro from "./pages/Registro/Registro"; 
-import Añadir from "./pages/Añadir/Añadir";
-import NavBar from "./components/navbar";
+import Agregar from "./pages/Agregar/Agregar";
 import Login from "./pages/Login/Login";
-import Footer from "./components/Footer";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <NavBar/>
-          <Routes>
-            <Route exact path="/" element={<Inicio/>}/>
-            <Route exact path="/registro" element={<Registro/>}/>
-            <Route exact path="/Añadir" element={<Añadir/>}/>
-            <Route exact path="/login" element={<Login/>}/>
-          </Routes>
-        <Footer/>
-      </Router>
-    </div>
+    <React.Fragment>
+      <div className="App">
+            
+        <Router>
+            <Routes> 
+              <Route ot exact path="/" element={<Home/>}/>
+              <Route exact path="/inicio" element={<Inicio/>}/>
+              <Route exact path="/registro" element={<Registro/>}/>
+              <Route exact path="/agregar" element={<Agregar/>}/>
+              <Route exact path="/login" element={<Login/>}/>
+            </Routes>
+        </Router>
+      </div>
+    </React.Fragment>
   );
 }
 

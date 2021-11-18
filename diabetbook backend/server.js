@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv")
+const bookAPI = require("./Routes/route");
 
 dotenv.config();
 const app = express();
@@ -27,3 +28,7 @@ mongoose.connect(url, options)
 .catch((error)=>{
     console.log(error)
 })
+
+app.use(bookAPI);
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));

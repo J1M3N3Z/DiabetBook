@@ -13,7 +13,7 @@ const Datos = (props) => {
             <div className="col">
                 <div className="card mb-4 rounded-3 shadow-sm">
                     <div className ={"card-header py-3"}>
-                        <h4 className="my-0 fw-normal">{registro.nombre}</h4>
+                        <h4 className="my-0 fw-normal">{registro.name}</h4>
                     </div>
                     
                     <div className="card-body">
@@ -30,12 +30,12 @@ const Datos = (props) => {
                         </h3>
 
                         <h3 className="card-title pricing-card-title">
-                           { registro.detalles}
+                           { registro.details}
                             <small className="h6 text-muted fw-light d-block"> Detalles</small>
                         </h3>
 
                         <ul className="list-unstyled mt-3 mb-4">
-                           <li>{registro.fecha}</li>
+                           <li>{registro.date}</li>
                         </ul>
 
                         <button type="button"
