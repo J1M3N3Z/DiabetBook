@@ -1,12 +1,14 @@
 const express = require("express");
 const mongoose = require("mongoose");
+
+
+
 const dotenv = require("dotenv")
-const bookAPI = require("./Routes/route");
+const cors = require("cors");
 
 dotenv.config();
 const app = express();
-
-
+app.use(cors());
 
 //Connection to the DataBase
 const url = "mongodb+srv://" + process.env.DB_USERNAME + ":" + 
@@ -29,6 +31,13 @@ mongoose.connect(url, options)
     console.log(error)
 })
 
-app.use(bookAPI);
+app.use(express.static(path.join(__dirname, 'public')));
+
+
+const RegistroApi = require("./Routes/Registro");
+const AuthApi = require("./Routes/Auth");
+
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+app.use(RegistroApi);
+app.use(AuthApi);

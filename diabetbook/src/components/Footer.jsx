@@ -4,42 +4,38 @@ import "../components/Components.css"
 const Footer = () => {
   return (
     <div className="footer">
-        <div className="bg-dark p-1 navbar-fixed-bottom ">
-            <ul className="nav justify-content-center border-bottom pb-3 mb-3">
-                <li className="">
-                    <Link to="/" 
-                    className="nav-link px-3 text-muted">
-                        Inicio
-                    </Link>
-                </li>
-                <li className="">
-                    <Link to="/registro" 
-                    className="nav-link px-3 text-muted">
-                        Registro
-                    </Link>
-                </li>
-                <li className="">
-                    <Link to="/añadir" 
-                    className="nav-link px-3 text-muted">
-                        Añadir
-                    </Link>
-                </li>
-                <li className="">
-                    <Link to="/login" 
-                    className="nav-link px-3 text-muted">
-                        Login
-                    </Link>
-                </li>
-                <li className="">
-                    <Link to="/" 
-                    className="nav-link px-3 text-muted">
-                        Inicio
-                    </Link>
-                </li>
-            </ul>
-            <p className="text-muted text-center">
-                {new Date().getFullYear()}  copyright
-            </p>
+        <div>
+            <div className="bg p-2 navbar-fixed-bottom ">
+                <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li className="">
+                        <Link to="/" 
+                        className="nav-link px-3 text-dark">
+                            Inicio
+                        </Link>
+                    </li>
+                    <li className="">
+                        <Link to="/registro" 
+                        className="nav-link px-3 text-dark">
+                            Registro
+                        </Link>
+                    </li>
+                    <li className="">
+                        <Link to="/agregar" 
+                        className="nav-link px-3 text-dark">
+                            Agregar
+                        </Link>
+                    </li>
+                    <li className="">
+                        <Link to="/login" 
+                        className="nav-link px-3 text-dark">
+                            Login
+                        </Link>
+                    </li>
+                </ul>
+                <p className="text-dark text-center">
+                    {new Date().getFullYear()} & copyright by J1M3N3Z
+                </p>
+            </div>
         </div>
     </div> 
   );

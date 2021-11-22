@@ -3,5 +3,27 @@
     width: 100%;
     height: 90vh;
     background-size:cover;
-    position: relative;
+    position: absolute;
+}
+
+.button-background{
+    box-shadow: rgb(255, 255, 255);
+    border-radius: 13px;
+    background-color: rgb(233, 172, 241);
+
+}
+
+.registro-h1 {
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: rgba(77, 151, 201, 0.973);
+    text-shadow: -1px 0 2px #2f4d5a;
+    margin-top: 10px;
+}
+
+.card-img {
+    background:url("../../assets/fondo2.jpg");
 }

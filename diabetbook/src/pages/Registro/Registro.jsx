@@ -14,6 +14,20 @@ const Registro = () =>{
         details:"Soy Detalles", 
         resultado:"Soy Resultado", 
         date:fecha,
+        },
+        {
+            _id:1,
+            name:"paciente1", 
+            details:"Soy Detalles", 
+            resultado:"Soy Resultado", 
+            date:fecha,
+        },
+        {
+            _id:1,
+            name:"paciente1", 
+            details:"Soy Detalles", 
+            resultado:"Soy Resultado", 
+            date:fecha,
         }
     ]
 
@@ -48,14 +62,15 @@ const Registro = () =>{
             <div className="registro-image">
                 <ul>
                 <div className="p-3 pb-md-4 mx-auto text-center">
-                    <h1 className="display-4 fw-normal">Registro</h1>
-                    <div className="row row-cols-1 row-cols-md-3 mb-3 text-center"></div>
-                        {registros.map((registro) => (
-                            <Datos 
-                            key={registro._id} 
-                            registro={registro} 
-                            handleDelete={handleDelete}/>      
-                        ))}
+                    <h1 className="registro-h1">Registro</h1>
+                        <div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                            {registros.map((registro) => (
+                                <Datos 
+                                key={registro._id} 
+                                registro={registro} 
+                                handleDelete={handleDelete}/>      
+                            ))}
+                        </div>
                     </div>
                 </ul>
             </div>

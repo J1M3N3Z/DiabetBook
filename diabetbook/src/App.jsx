@@ -6,6 +6,7 @@ import Registro from "./pages/Registro/Registro";
 import Agregar from "./pages/Agregar/Agregar";
 import Login from "./pages/Login/Login";
 import Home from "./pages/Home/Home";
+import Hola from "./pages/hola";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
               <Route exact path="/registro" element={<Registro/>}/>
               <Route exact path="/agregar" element={<Agregar/>}/>
               <Route exact path="/login" element={<Login/>}/>
+              <Route exact path="/hola" element={<Hola/>}/>
             </Routes>
         </Router>
       </div>

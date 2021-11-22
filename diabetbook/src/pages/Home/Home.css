@@ -1,7 +1,7 @@
 .home {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(9, 135, 207, 0.5), rgba(0, 0, 0, 0.2)), url("../../assets//DiabetBook3.jpg") top center;
+    background: linear-gradient(rgba(9, 135, 207, 0.5), rgba(0, 0, 0, 0.2)), url("../../assets//DiabetBook5.jpg") top center;
     background-size:cover;
     position: relative;
     margin-bottom: -270px;
