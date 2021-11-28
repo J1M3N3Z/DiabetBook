@@ -1,16 +1,23 @@
 .registro-image{
-    background: linear-gradient(rgba(194, 177, 177, 0.5), rgba(49, 106, 190, 0.2)), url("../../assets/fondo1.jpg") fixed center center;
+    background: linear-gradient(rgba(194, 177, 177, 0.5), rgba(49, 106, 190, 0.2)), url("../../assets/fondo6.jpg") fixed center center;
     width: 100%;
     height: 90vh;
     background-size:cover;
     position: absolute;
 }
 
-.button-background{
+.button-delete{
     box-shadow: rgb(255, 255, 255);
     border-radius: 13px;
-    background-color: rgb(233, 172, 241);
+    background-color: rgb(226, 26, 42);
+    margin-bottom: 10px;
+}
 
+.button-edit{
+    box-shadow: rgb(255, 255, 255);
+    border-radius: 13px;
+    background-color: rgb(43, 166, 170);
+    margin-bottom: 10px;
 }
 
 .registro-h1 {
@@ -22,6 +29,7 @@
     color: rgba(77, 151, 201, 0.973);
     text-shadow: -1px 0 2px #2f4d5a;
     margin-top: 10px;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .card-img {

@@ -1,18 +1,159 @@
 /* FOOTER */
 
 .footer {
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    height:110px;
-    width:100%;
-    background-color: rgb(233, 172, 241);
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 90px;
+  width: 100%;
+  background-color: rgb(26, 23, 26);
 }
 
+.footer-img {
+  margin-top: -150px;
+  margin-bottom: 15px;
+  background: white;
+  color: #2f4d5a;
+  border: 4px solid #151616;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.span-text {
+  margin-top: -50px;
+}
 
 /* NAVBAR */
 
-.navbar{
-    background-color: rgb(233, 172, 241);
+.navbar {
+  background-color: rgb(233, 172, 241);
 }
 
+.navbar-font {
+  font-family: prata;
+  font-size: 20px;
+}
+
+.navbar-button {
+  font-size: 20px;
+  font-family: prata;
+}
+
+/* EDITAR */
+
+.editar-section {
+  background: url("../assets/fondo10.jpg") center center no-repeat;
+  width: 100%;
+  height: 85vh;
+  background-size: cover;
+  padding: 190px 40px;
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.editar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #fdfcfcfd;
+  z-index: 9;
+}
+.editar-tittle {
+  font-size: 50px;
+  margin-bottom: 50px;
+  font-family: prata;
+}
+.editar-container {
+  position: relative;
+  z-index: 10;
+}
+.editar-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  margin-top: 10px;
+  border: 2px solid rgba(3, 61, 56, 0.5);
+  color: #fff;
+  text-decoration: none;
+  background-color: #406ab8;
+  margin-right: 10px;
+}
+.editar-content {
+  padding: 30px 30px 30px 0;
+  margin-top: -150px;
+  font-size: 25px;
+}
+.editar-content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  color: #355fbb;
+  margin-bottom: 30px;
+}
+
+.editar-icon {
+  font-size: 25px;
+  margin-right: 3px;
+  margin-left: 5px;
+}
+.editar-content .editar-btn {
+  display: inline-block;
+  background: #7898d3;
+  padding: 6px 44px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+  position: relative;
+  text-decoration: none;
+}
+.editar-content .editar-btn::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: rgb(246, 250, 249);
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+  animation: animation-1 3.5s ease;
+}
+.editar-content .editar-btn:hover::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 1200px) {
+  .editar-content {
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .editar {
+    text-align: center;
+  }
+}
+@keyframes animation-1 {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  30% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  60% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+}

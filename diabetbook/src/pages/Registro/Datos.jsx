@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Datos = (props) => {
     const {registro, handleDelete} = props
@@ -38,12 +39,17 @@ const Datos = (props) => {
                         <ul className="list-unstyled mt-3 mb-4">
                            <li>{registro.date}</li>
                         </ul>
-                        <div className="button-background">
+                        <div className="button-delete">
                             <button type="button"
                                 className="w-100 btn btn-lg btn-outline" 
                                 onClick={()=>{handleDelete(registro)}}>
                                     Delete 
                             </button>
+                        </div>
+                        <div className="button-edit">
+                            <Link to="/editar" className="w-100 btn btn-lg btn-outline">
+                                Edit
+                            </Link>
                         </div>
                     </div>
                 </div>
