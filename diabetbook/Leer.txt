@@ -1,0 +1,4 @@
+Debido a falta de tiempo no se pudo crear la pagina para crear 
+nuevos usuarios por lo que la use mientras con admin como usuario 
+y contraseña pero directamente desde la base de datos se pueden crear 
+nuevos y ser usados, sino utilizar admin. Gracias
