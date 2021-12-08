@@ -1,0 +1,47 @@
+.dropdown{
+  background-color: blueviolet;
+}
+
+
+#navbar #dropdown-header .row:nth-child(1) {
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.links{
+  margin-left: 550px;
+  font-size: 22px;
+  font-family: 'Readex Pro', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+#navbar #dropdown-header .row:nth-child(2) {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+#navbar {
+  background: rgb(26, 23, 26);
+  background: radial-gradient(
+    circle,
+    rgb(27, 26, 27) 0%, 
+    rgb(27, 26, 27) 50%,
+    rgb(29, 27, 29) 69%
+  );
+}
+.logo {
+  width: 65%;
+}
+#navbar-in {
+  font-size: 50px;
+  font-family: 'Cormorant Garamond', serif;
+}
+#navbar-sub-brand {
+  font-size: 25px;
+}
+#navbar-img {
+  width: 5%;
+}
